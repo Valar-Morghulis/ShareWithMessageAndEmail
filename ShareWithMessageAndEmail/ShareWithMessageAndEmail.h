@@ -13,5 +13,5 @@
 @interface ShareWithMessageAndEmail : NSObject
 
 +(MFMessageComposeViewController *)message:(NSString *)phones msg:(NSString *)message del:(id<MFMessageComposeViewControllerDelegate>)del;//phones 用「,」分割
--(MFMailComposeViewController *)email:(NSString *)recipient mailSubject:(NSString *)mailSubject mailBody:(NSString *)mailBody isHTML:(BOOL)isHTML del:(id<MFMailComposeViewControllerDelegate> )del;//recipient 收件人 用 ,分割
++(MFMailComposeViewController *)email:(NSString *)recipient mailSubject:(NSString *)mailSubject mailBody:(NSString *)mailBody isHTML:(BOOL)isHTML del:(id<MFMailComposeViewControllerDelegate> )del;//recipient 收件人 用 ,分割
 @end

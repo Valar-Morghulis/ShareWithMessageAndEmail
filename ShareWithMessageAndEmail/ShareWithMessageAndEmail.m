@@ -37,7 +37,7 @@
     }
     return 0;
 }
--(MFMailComposeViewController *)email:(NSString *)recipient mailSubject:(NSString *)mailSubject mailBody:(NSString *)mailBody isHTML:(BOOL)isHTML del:(id<MFMailComposeViewControllerDelegate> )del
++(MFMailComposeViewController *)email:(NSString *)recipient mailSubject:(NSString *)mailSubject mailBody:(NSString *)mailBody isHTML:(BOOL)isHTML del:(id<MFMailComposeViewControllerDelegate> )del
 {
     if ([MFMailComposeViewController canSendMail])
     {
